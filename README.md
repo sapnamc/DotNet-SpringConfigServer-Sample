@@ -15,12 +15,9 @@ You must first create an instance of the Config Server service in a org/space.
 
 # Publish App & Push
 
-1. Open \Samples\Configuration\Configuration.sln in Visual Studio 2015.
-2. Select SimpleCloudFoundry project in Solution Explorer.
-3. Right-click and select Publish
-4. Publish the App to a folder. (e.g. c:\publish)
-5. cd publish_folder (e.g. cd c:\publish)
-6. cf push 
+1. clone this repo
+2. cd into this cloned repo
+3. cf push 
 
 # What to expect
 The cf push will create an app in the space by the name `foo` and will bind the `myConfigServer` service instance to the app. You can hit the app @ `http://foo.x.y.z/`.
